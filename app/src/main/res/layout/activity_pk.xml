@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_pupo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.paishow.PkActivity">
+
+    <!--<com.etsy.android.grid.StaggeredGridView-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/grid_view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--app:column_count_landscape="2"-->
+    <!--app:column_count_portrait="2"-->
+    <!--app:item_margin="2dp"-->
+    <!--/>-->
+    <!--<com.geminno.test.PullToRefreshStaggeredGridView-->
+
+
+    <LinearLayout
+        android:id="@+id/dongtai_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageView
+            android:id="@+id/iv_returntohome"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:src="@drawable/showruler"
+
+            />
+        <TextView
+            android:id="@+id/id_prod_list_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="3"
+            android:text="玩家大擂台"
+            android:textColor="#ea8010"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical">
+            <ImageView
+                android:id="@+id/iv_rules"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/pkitem"
+                android:scaleType="centerCrop"
+
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_below="@id/dongtai_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.example.asus.paishow.pubuliu.PullToRefreshStaggeredGridView
+
+            android:id="@+id/pull_grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#F0F0F0"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            app:column_count="2"
+            app:item_margin="8dp"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_login"
+    android:clickable="true">
+
+    <FrameLayout
+        android:id="@+id/de_frm_backgroud"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/de_login_backgroud"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-50dp"
+            android:layout_marginRight="-300dp"
+            android:scaleType="center"
+            android:background="@drawable/backp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="right|top">
+
+            <!--<ImageView-->
+                <!--android:id="@+id/de_login_logo"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginTop="91dip"-->
+                <!--android:src="@drawable/a" />-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="180dp"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/liner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dip"
+                    android:layout_marginRight="30dip"
+                    android:orientation="horizontal">
+
+
+                    <com.example.asus.paishow.widiget.ClearWriteEditText
+                        android:id="@+id/de_login_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rc_ed_public_service_search_selector"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="手机号码"
+                        android:drawableLeft="@drawable/ic_phone"
+                        android:phoneNumber="true"
+                        android:singleLine="true"
+                        android:maxLength="11"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF" />
+
+                    <FrameLayout
+                        android:id="@+id/fr_username_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/de_login_phone"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone">
+
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/liner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="37dp"
+                    android:orientation="horizontal">
+
+
+                    <com.example.asus.paishow.widiget.ClearWriteEditText
+                        android:id="@+id/de_login_password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rc_ed_public_service_search_selector"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="密码"
+                        android:drawableLeft="@drawable/ic_password"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textColor="#FFFFFF"
+                        android:textColorHint="#FFFFFF" />
+
+                    <FrameLayout
+                        android:id="@+id/fr_pass_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/de_login_password"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone">
+
+                    </FrameLayout>
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/de_login_sign"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="34dp"
+                    android:background="@drawable/rs_select_btn_login"
+                    android:text="登录"
+                    android:textColor="#FFFFFF" />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/de_login_forgot"
+        android:textSize="14sp"
+        android:textColor="#aaaaaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_alignParentBottom="true"
+        android:text="忘记密码" />
+
+    <TextView
+        android:id="@+id/de_login_register"
+        android:textSize="14sp"
+        android:textColor="#aaaaaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="注册新用户" />
+
+</RelativeLayout>

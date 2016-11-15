@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_xin_jian_xiang_ce"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    tools:context="com.example.ssnn.XinJianXiangCeActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_xinjianxiangce_toubu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+
+
+        <TextView
+
+            android:text="新建相册"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv_xinjianxiangce_fanhui"
+            android:layout_marginLeft="-30dp"
+            android:src="@drawable/fanhui"
+            android:layout_centerVertical="true"
+            android:layout_height="35dp"
+            android:layout_width="wrap_content"
+            />
+        <TextView
+            android:id="@+id/tv_xinjianxiangce_baocun"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="保存"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_marginTop="10dp"
+    android:background="#fff"
+    android:layout_below="@+id/rl_xinjianxiangce_toubu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:layout_marginLeft="10dp"
+        android:id="@+id/et_xinjianxiangce_biaoti"
+        android:hint="标题"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+</RelativeLayout>
+
+</RelativeLayout>

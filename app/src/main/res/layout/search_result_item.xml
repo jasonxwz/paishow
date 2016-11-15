@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/iv_touxiang"
+        android:src="@drawable/katongtouxiang"
+        android:layout_marginRight="20dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:text="aaa"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_touxiang"
+        android:layout_alignTop="@id/iv_touxiang"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/carecare"/>
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:text="5小时前"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@id/tv_name"
+        android:layout_toEndOf="@id/iv_touxiang"
+        android:textColor="#000"
+        />
+
+    <TextView
+
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:text="动态标题"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/iv_touxiang"
+        android:textColor="#000"
+        />
+    <TextView
+
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:text="我很烦"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tv_title"
+        android:textColor="#000"/>
+
+    <ImageView
+        android:id="@+id/iv_ha"
+        android:src="@drawable/ha"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/tv_text"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+    <ImageView
+        android:id="@+id/iv_shi"
+        android:src="@drawable/shi"
+        android:layout_toRightOf="@id/iv_ha"
+        android:layout_below="@id/tv_text"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+
+    <ImageView
+        android:id="@+id/iv_qi"
+        android:src="@drawable/qi"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/iv_ha"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+    <ImageView
+        android:id="@+id/iv_hashiqi"
+        android:src="@drawable/hashiqi"
+        android:layout_toRightOf="@id/iv_qi"
+        android:layout_below="@id/iv_shi"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+
+    <LinearLayout
+
+        android:id="@+id/gongneng"
+        android:layout_below="@+id/iv_hashiqi"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:background="@drawable/border">
+
+
+        <LinearLayout
+            android:id="@+id/ll_share"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/iv_share"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:layout_height="match_parent"
+                android:src="@drawable/zhuanfa"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:clickable="false"
+                android:text="分享"
+                android:textColor="#888"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/md_line"
+            android:layout_gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:src="@drawable/pinglun"/>
+            <TextView
+                android:textColor="#888"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="评论"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/md_line"
+            android:layout_gravity="center_vertical"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:src="@drawable/zanzan"/>
+            <TextView
+                android:textColor="#888"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="点赞"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

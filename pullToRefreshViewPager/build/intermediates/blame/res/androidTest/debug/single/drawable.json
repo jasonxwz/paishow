@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\checkout3\\paishow\\pullToRefreshViewPager\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_top.xml",
+        "source": "D:\\checkout3\\paishow\\pullToRefreshViewPager\\build\\intermediates\\exploded-aar\\paishow\\library\\unspecified\\res\\drawable\\indicator_bg_top.xml"
+    },
+    {
+        "merged": "D:\\checkout3\\paishow\\pullToRefreshViewPager\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\indicator_bg_bottom.xml",
+        "source": "D:\\checkout3\\paishow\\pullToRefreshViewPager\\build\\intermediates\\exploded-aar\\paishow\\library\\unspecified\\res\\drawable\\indicator_bg_bottom.xml"
+    }
+]

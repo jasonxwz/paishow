@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_xiangce_zhaopian"
+        android:layout_marginTop="10dp"
+        android:layout_width="113dp"
+        android:layout_height="113dp" />
+   <!-- <TextView
+        android:id="@+id/tv_zhaopian_riqi"
+        android:layout_marginLeft="11dp"
+        android:textColor="#999"
+
+        android:text="1990-01-01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_xiangce_zhaopian"/>-->
+    <ImageView
+        android:id="@+id/iv_shanchu_xiaohongdian_zhaopian"
+        android:visibility="invisible"
+        android:layout_toRightOf="@+id/iv_xiangce_zhaopian"
+        android:layout_above="@+id/iv_xiangce_zhaopian"
+        android:layout_marginBottom="-30dp"
+        android:layout_marginLeft="-15dp"
+        android:src="@drawable/shanchu"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+
+</RelativeLayout>

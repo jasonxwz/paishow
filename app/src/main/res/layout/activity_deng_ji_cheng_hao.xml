@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_deng_ji_cheng_hao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    tools:context="com.example.ssnn.DengJiChengHaoActivity">
+    <RelativeLayout
+        android:id="@+id/rl_dengjichenghao_toubu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+
+        <TextView
+
+            android:text="等级称号"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv_dengjichenghao_fanhui"
+            android:layout_marginLeft="-30dp"
+            android:src="@drawable/fanhui"
+            android:layout_centerVertical="true"
+            android:layout_height="35dp"
+            android:layout_width="wrap_content"
+            />
+
+
+    </RelativeLayout>
+    <TextView
+        android:textColor="#ea8010"
+        android:id="@+id/tv_rank"
+        android:text=" 当前等级为："
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:layout_centerVertical="true"
+        android:background="#fff"
+        android:layout_below="@+id/rl_dengjichenghao_toubu"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+  <!--  <ImageView
+        android:id="@+id/iv_dengji0"
+        android:layout_below="@+id/tv_rank"
+        android:src="@drawable/dengji0"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="-3dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />-->
+    <RadioGroup
+        android:background="#ededed"
+        android:id="@+id/iv_dengji0"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tv_rank"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:gravity="center"
+            android:text="等级"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:gravity="center"
+                android:text="所需经验"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:gravity="center"
+                android:text="等级图标"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        </RelativeLayout>
+
+
+
+    </RadioGroup>
+
+    <ScrollView
+        android:layout_below="@id/iv_dengji0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/dengji1"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="700dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

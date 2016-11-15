@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.asus.paishow">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    //摄像头权限
+    SD卡读写权限
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DongtaiActivity" />
+        <activity
+            android:name=".viewpager.ViewPagerTest"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <activity
+            android:name=".PkActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".DongtaiItemActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".SentActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CameraActivity" />
+        <activity
+            android:name=".SearchActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".SearchResultActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:theme="@style/customTheme" />
+        <activity
+            android:name="me.iwf.photopicker.PhotoPagerActivity"
+            android:theme="@style/customTheme" />
+        <activity android:name=".pk2Activity" />
+        <activity android:name="com.example.ssnn.GeRenZhuYeActivity" />
+        <activity android:name="com.example.ssnn.DengJiChengHaoActivity" />
+        <activity android:name="com.example.ssnn.ShiGuangZhouActivity" />
+        <activity android:name="com.example.ssnn.CaoGaoXiangActivity" />
+        <activity android:name="com.example.ssnn.SheZhiActivity" />
+        <activity android:name="com.example.ssnn.XiuGaiZiLiaoActivity" />
+        <activity android:name="com.example.ssnn.xiugaiziliao.XiuGaiTouXiangActivity" />
+        <activity android:name="com.example.ssnn.xiugaiziliao.XiuGaiNiChengActivity" />
+        <activity android:name="com.example.ssnn.xiugaiziliao.XiuGaiXingBieActivity" />
+        <activity android:name="com.example.ssnn.xiugaiziliao.XiuGaiShengRiActivity" />
+        <activity android:name="com.example.ssnn.xiugaiziliao.XiuGaiJianJieActivity" />
+        <activity android:name="com.example.ssnn.XiangCeActivity" />
+        <activity android:name="com.example.ssnn.YuWoXiangGuanActivity" />
+        <activity android:name="com.example.ssnn.TianJiaZhaoPianActivity" />
+        <activity android:name="com.example.ssnn.ZhaoPianActivity" />
+        <activity android:name="com.example.ssnn.XinJianXiangCeActivity" />
+        <activity android:name=".ImagePagerActivity" />
+        <activity android:name="com.example.ssnn.DaTuPianActivity" />
+        <activity android:name="com.example.ssnn.xiugaiziliao.XiuGaiBeiJingActivity" />
+        <activity android:name="com.example.ssnn.FenSiActivity" />
+        <activity android:name="com.example.ssnn.GuanZhuActivity" />
+
+        <meta-data
+            android:name="RONG_CLOUD_APP_KEY"
+            android:value="25wehl3uwhfzw" />
+
+        <activity
+            android:name=".ConversationActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.example.asus.paishow"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity">
+
+        </activity>
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".ForgetPsdActivity" />
+        <activity android:name="com.example.ssnn.XiuGaiMiMaActivity" />
+        <activity android:name=".DongtaiXiangxi"></activity>
+        <activity android:name=".AddContactActivity"></activity>
+        <activity android:name=".RuleActivity">
+
+        </activity>
+    </application>
+
+</manifest>

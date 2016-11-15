@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_xiu_gai_bei_jing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.ssnn.xiugaiziliao.XiuGaiBeiJingActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_xiugaibeijing_toubu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+
+
+        <TextView
+            android:text="背景图片"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv_xiugaibeijing_fanhui"
+            android:layout_marginLeft="-30dp"
+            android:src="@drawable/fanhui"
+            android:layout_centerVertical="true"
+            android:layout_height="35dp"
+            android:layout_width="wrap_content"
+            />
+        <TextView
+            android:id="@+id/tv_beijing_baocun"
+            android:text="保存"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_beijing_________"
+        android:background="#fff"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rl_xiugaibeijing_toubu"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+    <!--    <ImageView
+            android:id="@+id/iv_zuizongxiugai0_beijing"
+            android:layout_centerInParent="true"
+            android:src="@drawable/touxiang"
+
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />-->
+
+        <ImageView
+            android:id="@+id/iv_zuizongxiugai_beijing"
+            android:layout_centerInParent="true"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:background="#fff"
+        android:layout_marginTop="5dp"
+        android:id="@+id/bt_paizhao_beijing"
+        android:layout_below="@+id/rl_beijing_________"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="拍照"/>
+
+
+
+    <Button
+        android:background="#fff"
+        android:id="@+id/bt_xiangce_beijing"
+        android:layout_below="@+id/bt_paizhao_beijing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="从相册取"/>
+
+
+</RelativeLayout>

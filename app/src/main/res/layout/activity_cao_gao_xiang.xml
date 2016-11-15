@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cao_gao_xiang"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.ssnn.CaoGaoXiangActivity">
+
+    <RelativeLayout
+        android:id="@+id/caogaoxiang_toubu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+
+
+        <TextView
+
+            android:text="草稿箱"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+
+        <ImageView
+            android:id="@+id/iv_caogaoxiang_fanhui"
+            android:layout_marginLeft="-30dp"
+            android:src="@drawable/fanhui"
+            android:layout_centerVertical="true"
+            android:layout_height="35dp"
+            android:layout_width="wrap_content"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_below="@+id/caogaoxiang_toubu"
+        android:src="@drawable/caogaoxiangbeijing"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <!-- content header line -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgContentTop"
+        android:paddingBottom="7dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="7dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+        <!--android:text="@string/order_id_mock"-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <!--android:text="@string/price_mock"-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/menu_icon" />
+
+    </RelativeLayout>
+
+    <!-- content header image -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/head_image"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/head_image" />
+
+        <TextView
+            android:id="@+id/tv_guanzhuNum_con"
+            style="@style/ContentImageBadgeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/head_image"
+            android:layout_alignStart="@id/head_image"
+            android:paddingBottom="10dp"
+            android:paddingStart="20dp"
+            android:text="@string/requests_count_mock" />
+
+        <TextView
+            style="@style/ContentImageBadgeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_guanzhuNum_con"
+            android:layout_alignStart="@id/tv_guanzhuNum_con"
+            android:paddingStart="20dp"
+            android:text="关注"
+            />
+
+        <TextView
+            android:id="@+id/tv_shenglvNum_con"
+            style="@style/ContentImageBadgeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/head_image"
+            android:layout_alignEnd="@id/head_image"
+            android:paddingBottom="10dp"
+            android:paddingEnd="20dp"
+            android:text="@string/weight_mock" />
+
+        <TextView
+            style="@style/ContentImageBadgeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_shenglvNum_con"
+            android:layout_alignStart="@id/tv_shenglvNum_con"
+            android:text="胜率" />
+
+        <TextView
+            android:id="@+id/tv_fensiNum_con"
+            style="@style/ContentImageBadgeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/head_image"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="10dp"
+            android:text="@string/pledge_mock" />
+
+        <TextView
+            style="@style/ContentImageBadgeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_fensiNum_con"
+            android:layout_alignStart="@id/tv_fensiNum_con"
+            android:text="粉丝" />
+
+
+    </RelativeLayout>
+
+    <!-- content body layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgContent"
+        android:orientation="vertical"
+        android:paddingBottom="6dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="9dp">
+
+        <!-- avatar and name part -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/content_avatar_title"
+                style="@style/ContentMainBadgeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="5dp"
+                android:text="个人信息" />
+
+            <ImageView
+                android:id="@+id/tv_userImg"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/content_avatar_title"
+                android:scaleType="centerCrop"
+                android:src="@drawable/avatar" />
+
+            <TextView
+                android:id="@+id/tv_userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_userImg"
+                android:layout_marginBottom="2dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/tv_userImg"
+                android:text="@string/client_name_mock"
+                android:textColor="@color/mainTextColor"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/iv_userSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv_userName"
+                android:layout_marginLeft="2dp"
+                android:background="@android:color/transparent"
+
+                android:layout_alignBottom="@+id/tv_userName"/>
+
+            <ImageView
+                android:id="@+id/content_rating_stars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/tv_userName"
+                android:layout_below="@id/tv_userName"
+                android:src="@drawable/stars" />
+
+            <TextView
+                android:id="@+id/tv_dengji_con"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/content_rating_stars"
+                android:layout_marginBottom="-4dp"
+                android:layout_marginStart="3dp"
+                android:layout_toEndOf="@id/content_rating_stars"
+                android:text="@string/rating_mock"
+                android:textColor="@color/contentBadgeTitle"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow1" />
+
+        </RelativeLayout>
+
+        <!-- divider line -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="9dp"
+            android:src="@color/contentDividerLine" />
+
+        <!-- addresses part -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/content_from_badge"
+                    style="@style/ContentMainBadgeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="所在地" />
+
+                <TextView
+                    android:id="@+id/tv_userLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/content_from_badge"
+                    android:layout_below="@id/content_from_badge"
+                    android:text="@string/content_from1_mock"
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!--<TextView-->
+                    <!--android:id="@+id/content_from_address_2"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignStart="@id/content_from_address_1"-->
+                    <!--android:layout_below="@id/content_from_address_1"-->
+                    <!--android:text="@string/content_from2_mock"-->
+                    <!--android:textColor="@color/mainTextColor"-->
+                    <!--android:textSize="14sp" />-->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_content_to_badge"
+                    style="@style/ContentMainBadgeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="生日" />
+
+                <TextView
+                    android:id="@+id/tv_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/tv_content_to_badge"
+                    android:layout_below="@id/tv_content_to_badge"
+                    android:text="@string/content_to1_mock"
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <!--<TextView-->
+                    <!--android:id="@+id/content_to_address_2"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignStart="@id/birthday"-->
+                    <!--android:layout_below="@id/birthday"-->
+                    <!--android:text="@string/content_to2_mock"-->
+                    <!--android:textColor="@color/mainTextColor"-->
+                    <!--android:textSize="14sp" />-->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrow1" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!-- divider line -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="7dp"
+            android:src="@color/contentDividerLine" />
+
+        <!-- dates part -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_gexingqianming"
+                    style="@style/ContentMainBadgeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="个性签名" />
+
+                <TextView
+                    android:id="@+id/tv_gexingqianming_con"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/tv_gexingqianming"
+                    android:layout_below="@id/tv_gexingqianming"
+                    android:text="@string/delivery_time_mock"
+                    android:textColor="@color/mainTextColor"
+                    android:textSize="15sp"
+
+                />
+
+
+
+                <!--<TextView-->
+                    <!--android:id="@+id/content_delivery_date"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignStart="@id/content_delivery_time"-->
+                    <!--android:layout_below="@id/content_delivery_time"-->
+                    <!--android:text="@string/delivery_date_mock"-->
+                    <!--android:textColor="@color/mainTextColor"-->
+                    <!--android:textSize="14sp" />-->
+
+            </RelativeLayout>
+
+            <!--<RelativeLayout-->
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <!--<TextView-->
+                    <!--android:id="@+id/content_deadline_badge"-->
+                    <!--style="@style/ContentMainBadgeTitle"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:text="@string/deadline_badge" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/content_deadline_time"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignStart="@id/content_deadline_badge"-->
+                    <!--android:layout_below="@id/content_deadline_badge"-->
+                    <!--android:text="@string/deadline_time_mock"-->
+                    <!--android:textColor="@color/mainTextColor"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/content_deadline_date"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignStart="@id/content_deadline_time"-->
+                    <!--android:layout_below="@id/content_deadline_time"-->
+                    <!--android:text=""-->
+                    <!--android:textColor="@color/mainTextColor"-->
+                    <!--android:textSize="14sp" />-->
+            <!--</RelativeLayout>-->
+
+        </LinearLayout>
+
+        <!-- request button -->
+        <TextView
+            android:id="@+id/content_request_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/btnRequest"
+            android:padding="10dp"
+            android:text="加关注"
+            android:textAlignment="center"
+            android:textColor="@color/mainTextColor"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/btn_annotation_mock"
+            android:textAlignment="center"
+            android:textColor="@color/contentBadgeTitle"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\checkout3\\paishow\\pullToRefreshViewPager\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\default_ptr_rotate.png",
+        "source": "D:\\checkout3\\paishow\\pullToRefreshViewPager\\build\\intermediates\\exploded-aar\\paishow\\library\\unspecified\\res\\drawable-mdpi-v4\\default_ptr_rotate.png"
+    },
+    {
+        "merged": "D:\\checkout3\\paishow\\pullToRefreshViewPager\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\default_ptr_flip.png",
+        "source": "D:\\checkout3\\paishow\\pullToRefreshViewPager\\build\\intermediates\\exploded-aar\\paishow\\library\\unspecified\\res\\drawable-mdpi-v4\\default_ptr_flip.png"
+    },
+    {
+        "merged": "D:\\checkout3\\paishow\\pullToRefreshViewPager\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\indicator_arrow.png",
+        "source": "D:\\checkout3\\paishow\\pullToRefreshViewPager\\build\\intermediates\\exploded-aar\\paishow\\library\\unspecified\\res\\drawable-mdpi-v4\\indicator_arrow.png"
+    }
+]

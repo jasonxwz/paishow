@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_xiu_gai_zi_liao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+
+    tools:context="com.example.ssnn.XiuGaiZiLiaoActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_xiugaiziliao_toubu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff">
+
+
+        <TextView
+
+            android:text="修改资料"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv_xiugaiziliao_fanhui"
+            android:layout_marginLeft="-30dp"
+            android:src="@drawable/fanhui"
+            android:layout_centerVertical="true"
+            android:layout_height="35dp"
+            android:layout_width="wrap_content"
+             />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+
+        android:layout_below="@+id/rl_xiugaiziliao_toubu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/rl_xiugaitouxiang"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <TextView
+                android:id="@+id/tv_xiugaitouxiang"
+                android:text="  头像"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_width="100dp"
+                android:layout_height="50dp" />
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/iv_qianjin_touciang"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/qianjin"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <ImageView
+                android:id="@+id/iv_xiugaitouxiang"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv_qianjin_touciang"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_xiugainicheng"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:layout_below="@+id/rl_xiugaitouxiang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_xiugainicheng"
+                android:text="  昵称"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <ImageView
+                android:id="@+id/iv_qianjin_nicheng"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/qianjin"
+                android:layout_width="40dp"
+                android:layout_height="40dp"  />
+            <TextView
+                android:id="@+id/tv_xiugai_nicheng"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+
+                android:layout_toLeftOf="@+id/iv_qianjin_nicheng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_xiugaixingbie"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:layout_below="@+id/rl_xiugainicheng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_xiugaixingbie"
+                android:text="  性别"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <ImageView
+                android:id="@+id/iv_qianjin_xingbie"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/qianjin"
+                android:layout_width="40dp"
+                android:layout_height="40dp"  />
+            <TextView
+                android:id="@+id/tv_xiugai_xingbie"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:text="女"
+                android:layout_toLeftOf="@+id/iv_qianjin_xingbie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_xiugaishengri"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:layout_below="@+id/rl_xiugaixingbie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_xiugaishengri"
+                android:text="  生日"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <ImageView
+                android:id="@+id/iv_qianjin_shengri"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/qianjin"
+                android:layout_width="40dp"
+                android:layout_height="40dp"  />
+            <TextView
+                android:id="@+id/tv_xiugai_shengri"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:text="1970-12-12"
+                android:layout_toLeftOf="@+id/iv_qianjin_shengri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_xiugaijianjie"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:layout_below="@+id/rl_xiugaishengri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_xiugaijianjie"
+                android:text="  简介"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <ImageView
+                android:id="@+id/iv_qianjin_jianjie"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/qianjin"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/tv_xiugai_jianjie"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:text="人在塔在"
+                android:layout_toLeftOf="@+id/iv_qianjin_jianjie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_xiugaibeijingtupian"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:layout_below="@+id/rl_xiugaijianjie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_xiugaibeijingtupian"
+                android:text="  更换背景"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <ImageView
+                android:id="@+id/iv_qianjin_beijingtupian"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/qianjin"
+                android:layout_width="40dp"
+                android:layout_height="40dp"  />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_xiugaishoujihao"
+            android:layout_marginTop="15dp"
+            android:background="#fff"
+            android:layout_below="@+id/rl_xiugaibeijingtupian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_xiugaishoujihao"
+                android:text="  手机号"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <ImageView
+                android:id="@+id/iv_qianjin_shoujihao"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/qianjin"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/tv_xiugai_shoujihao"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:text="15366638216"
+                android:layout_toLeftOf="@+id/iv_qianjin_shoujihao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_xiugaisuozaidi"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:layout_below="@+id/rl_xiugaishoujihao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_xiugaisuozaidi"
+                android:text="  所在地"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+            <ImageView
+                android:id="@+id/iv_qianjin_suozaidi"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/qianjin"
+                android:layout_width="40dp"
+                android:layout_height="40dp"  />
+            <TextView
+                android:id="@+id/tv_xiugai_suozaidi"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:text="苏州"
+                android:layout_toLeftOf="@+id/iv_qianjin_suozaidi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

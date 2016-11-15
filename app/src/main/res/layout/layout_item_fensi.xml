@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_qitayonghu_touxiang"
+        android:src="@drawable/touxiang"
+        android:layout_width="75dp"
+        android:layout_height="75dp" />
+    <TextView
+        android:id="@+id/tv_qitayonghu_xingming"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:text="姓名"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/iv_qitayonghu_touxiang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_qitayonghu_jianjie"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:text="简介：度尽劫波兄弟在，相逢一笑泯恩仇"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/iv_qitayonghu_touxiang"
+        android:layout_below="@+id/tv_qitayonghu_xingming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
